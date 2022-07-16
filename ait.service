@@ -7,3 +7,5 @@ Group=www-data
 WorkingDirectory=/home/ubuntu/backend/backend
 ExecStart=gunicorn -b localhost:5000 application:application
 Restart=always
+[Install]
+WantedBy=multi-user.target
